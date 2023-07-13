@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
-    <Container fluid className="fs-small bg-light">
+    <Container fluid className="fs-small bg-light sticky-top">
       <Row className="px-4 py-3">
         <Col>
           <Link to={"https://wa.me/+39XXXXXXXXX"} target="_blank" className="text-decoration-none ">

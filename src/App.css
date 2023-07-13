@@ -10,6 +10,9 @@ body {
   min-height: 38vh;
   padding-top: 5rem;
 }
+.lightGray {
+  background-color: #f5f3f1 !important;
+}
 a.nav-link,
 .green-text,
 h1,
@@ -57,4 +60,15 @@ footer {
 
 .text {
   font-size: 1.1em;
+}
+.w-90 {
+  width: 90%;
+}
+
+.result-card {
+  background-color: #eaf9f8;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
