@@ -1,0 +1,175 @@
+{
+  "homePage": {
+    "test": {
+      "title": "Your website footprint?",
+      "firstP": "The internet consumes a lot of electricity. 416.2TWh per year to be precise, that's more than the entire United Kingdom.",
+      "secondP": "Do a quick scan of your website to understand its courrent impact."
+    },
+    "testError": {
+      "title": "Ops...",
+      "firstP": "It looks like we could not successfully calculate the carbon impact for",
+      "secondP": "Please double check the page url or write a new one."
+    },
+    "form": {
+      "label": "Your website",
+      "placeholder": "Write website url",
+      "button": "Calculate"
+    },
+    "testSuccessfull": {
+      "title": "Your website footprint ",
+      "link": "Calculate other site"
+    },
+    "resultComponent": {
+      "rating": "rating",
+      "title": "Efficienty Rating",
+      "subtitle1": "is cleaner than ",
+      "subtitle2": "% of web pages tested",
+      "cards": {
+        "first": {
+          "title": "Green site?",
+          "true": "YES",
+          "trueDescription": "This website's server runs on green energy",
+          "false": "NO",
+          "falseDescription": "This site's server doesn't run on green energy"
+        },
+        "second": {
+          "title": "Bytes",
+          "unit": "/page",
+          "description": "The ammount of bytes sent by this websites"
+        },
+        "third": {
+          "title": "produced",
+          "unit": "/page load",
+          "description": "The approximate ammount of CO2 transferred on eact page load in grams"
+        },
+        "fourth": {
+          "title": "Energy in kw",
+          "unit": "/page load",
+          "description": "The approximate ammount of energy transferred on each page load"
+        }
+      }
+    },
+    "previousResult": {
+      "title": "Carbon impact for",
+      "expand": "Expand",
+      "collapse": "Collapse"
+    }
+  },
+
+  "featuresPage": {
+    "title": "Limit Features",
+    "firstP": "What can you calculate",
+    "cards": {
+      "first": {
+        "title": "produced",
+        "description": "The approximate ammount of CO2 transferred on each page load in grams"
+      },
+      "second": {
+        "title": "Bytes per page",
+        "description": "The ammount of bytes sent by this websites"
+      },
+      "third": {
+        "title": "Green site?",
+        "description": "Understand if the site is using all green energy or is running on bot standard energy"
+      },
+      "fourth": {
+        "title": "% Efficiency",
+        "description": "Understand the efficiency rating of your website, learn hoy it stands out compared to the rest of the tested sites."
+      }
+    }
+  },
+
+  "pricingPage": {
+    "title": "Discover our pricing",
+    "firstP": "What to make your website climate neutral? Let us help you out",
+    "cards": {
+      "first": {
+        "title": "FREE",
+        "description": "For those who want to try our software with no committent",
+        "unit": "/year",
+        "button": "Buy",
+        "options": {
+          "first": "Advanced analytics and custom branding.",
+          "second": "Access to exclusive content or resources",
+          "third": "Increased storage or usage limits",
+          "fourth": "Priority customer support",
+          "fifth": "Customization options",
+          "sixth": "No advertisments"
+        }
+      },
+      "second": {
+        "title": "BUSINESS",
+        "description": "For those who want to try our software with no committent",
+        "unit": "/year",
+        "button": "Buy",
+        "options": {
+          "first": "Advanced analytics and custom branding.",
+          "second": "Access to exclusive content or resources",
+          "third": "Increased storage or usage limits",
+          "fourth": "Priority customer support",
+          "fifth": "Customization options",
+          "sixth": "No advertisments"
+        }
+      }
+    }
+  },
+
+  "contactPage": {
+    "title": "Contact us",
+    "firstP": "We are here to help, If you want drop us a line",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Write your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Write your email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Write your message here..."
+      },
+      "button": "Send"
+    }
+  },
+
+  "aboutPage": {
+    "title": "Limit team",
+    "firstP": "We are dedicated to make a difference.",
+    "secondP": "You can see in an instant which pages uses the most energy and how much CO2 you've emitted and compensated this month. Recive tips on hou to reduce the carbon fottprint of the pages on your websites."
+  },
+
+  "notFoundPage": {
+    "title": "404 - Page not found",
+    "firstP": "This page does not exist"
+  },
+
+  "privacyPolicy": {
+    "title": "Privacy Policy"
+  },
+
+  "navbar": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "carbonTest": "Carbon test",
+    "contactUs": "Contact us",
+    "aboutUs": "About us"
+  },
+
+  "footer": {
+    "firstP": "We are trying to raise awarness on the impact website have on our planet. Limit your website emission by following few recommendations.",
+    "secondP": "Be the first one to know about news and our next features to keep our planet saver.",
+    "form": {
+      "label": "Your email",
+      "placeholder": "Write your email",
+      "button": "Sign Up"
+    },
+    "links": {
+      "aboutUs": "About us",
+      "contact": "Contact",
+      "privacy": "Privacy policy"
+    },
+    "copyright": "All rights reserved."
+  }
+}

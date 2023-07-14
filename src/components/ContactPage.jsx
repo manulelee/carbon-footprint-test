@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -28,44 +30,44 @@ const ContactPage = () => {
     <Container className="page-container">
       <Row className="ms-3">
         <Col xs={12} md={8} lg={6}>
-          <h1 className="fw-bold">Contact us</h1>
-          <p className="blueGreen-text text">We are here to help, If you want drop us a line</p>
+          <h1 className="fw-bold">{t("contactPage.title")}</h1>
+          <p className="blueGreen-text text">{t("contactPage.firstP")}</p>
 
           <Form onSubmit={handleForm}>
             <Form.Group className="mb-3 w-75" controlId="contactForm">
               <Form.Label className="blueGreen-text mt-1 fw-bold">
-                <small>Name</small>
+                <small>{t("contactPage.form.name.label")}</small>
               </Form.Label>
               <Form.Control
                 className="blueGreen-border w-75"
                 required
                 type="text"
-                placeholder="Write your name"
+                placeholder={t("contactPage.form.name.placeholder")}
                 onChange={handleName}
               />
               <Form.Label className="blueGreen-text mt-1 fw-bold">
-                <small>Email</small>
+                <small>{t("contactPage.form.email.label")}</small>
               </Form.Label>
               <Form.Control
                 className="blueGreen-border w-75"
                 required
                 type="email"
-                placeholder="Write your email"
+                placeholder={t("contactPage.form.email.placeholder")}
                 onChange={handleEmail}
               />
               <Form.Label className="blueGreen-text mt-1 fw-bold">
-                <small>Message</small>
+                <small>{t("contactPage.form.message.label")}</small>
               </Form.Label>
               <Form.Control
                 className="blueGreen-border w-75"
                 required
                 as="textarea"
                 rows={4}
-                placeholder="Write your message here..."
+                placeholder={t("contactPage.form.message.placeholder")}
                 onChange={handleMessage}
               />
               <Button type="submit" className="btn-dark blueGreen blueGreen-border text-light mt-3">
-                Send
+                {t("contactPage.form.button")}
               </Button>
             </Form.Group>
           </Form>

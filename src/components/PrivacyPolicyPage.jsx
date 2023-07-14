@@ -1,11 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const PrivacyPolicyPage = () => {
+  const { t } = useTranslation();
   return (
     <Container className="page-container ms-5 ps-5">
       <Row className="ms-3">
         <Col xs={12} md={8} lg={6}>
-          <h1 className="fw-bold">Privacy policy</h1>
+          <h1 className="fw-bold">{t("privacyPolicy.title")}</h1>
           <p className="blueGreen-text text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quos voluptatibus veritatis non rem quas
             ipsum assumenda debitis explicabo velit repudiandae maxime vitae minima nihil itaque beatae dicta odit hic

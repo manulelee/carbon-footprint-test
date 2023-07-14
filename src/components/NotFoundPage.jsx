@@ -1,12 +1,14 @@
 import { Container } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { RiEmotionUnhappyLine } from "react-icons/ri";
 const NotFoundPage = () => {
+  const { t } = useTranslation();
   return (
     <Container className="page-container">
       <span className="ms-3">
-        <h1 className="fw-bold text-center">404 - Page not found</h1>
+        <h1 className="fw-bold text-center">{t("notFoundPage.title")}</h1>
         <p className="blueGreen-text text text-center">
-          This page does not exist <RiEmotionUnhappyLine />
+          {t("notFoundPage.firstP")} <RiEmotionUnhappyLine />
         </p>
       </span>
     </Container>

@@ -1,41 +1,38 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const FeaturePage = () => {
+  const { t } = useTranslation();
   return (
     <Container className="page-container">
       <span className="ms-3">
-        <h1 className="fw-bold">Limit Features</h1>
-        <p className="blueGreen-text text">What can you calculate</p>
+        <h1 className="fw-bold">{t("featuresPage.title")}</h1>
+        <p className="blueGreen-text text">{t("featuresPage.firstP")}</p>
         <Row className="mt-5">
           <Col xs={8} md={6} xl={3} className="mt-2">
             <div className="features-card px-3 pt-5 rounded-4">
               <h4 className="green-text fw-bold">
-                CO<sub>2</sub> produced
+                CO<sub>2</sub> {t("featuresPage.cards.first.title")}
               </h4>
-              <p className="text-dark">The approximate ammount of CO2 transferred on each page load in grams</p>
+              <p className="text-dark">{t("featuresPage.cards.first.description")}</p>
             </div>
           </Col>
           <Col xs={8} md={6} xl={3} className="mt-2">
             <div className="features-card px-3 pt-5 rounded-4">
-              <h4 className="green-text fw-bold">Bytes per page</h4>
-              <p className="text-dark">The ammount of bytes sent by this websites</p>
+              <h4 className="green-text fw-bold">{t("featuresPage.cards.second.title")}</h4>
+              <p className="text-dark">{t("featuresPage.cards.second.description")}</p>
             </div>
           </Col>
           <Col xs={8} md={6} xl={3} className="mt-2">
             <div className="features-card px-3 pt-5 rounded-4">
-              <h4 className="green-text fw-bold">Green site?</h4>
-              <p className="text-dark">
-                Understand if the site is using all green energy or is running on bot standard energy
-              </p>
+              <h4 className="green-text fw-bold">{t("featuresPage.cards.third.title")}</h4>
+              <p className="text-dark">{t("featuresPage.cards.third.description")}</p>
             </div>
           </Col>
           <Col xs={8} md={6} xl={3} className="mt-2">
             <div className="features-card px-3 pt-5 rounded-4">
-              <h4 className="green-text fw-bold"> % Efficiency</h4>
-              <p className="text-dark">
-                Understand the efficiency rating of your website, learn hoy it stands out compared to the rest of the
-                tested sites.
-              </p>
+              <h4 className="green-text fw-bold"> {t("featuresPage.cards.fourth.title")}</h4>
+              <p className="text-dark">{t("featuresPage.cards.fourth.description")}</p>
             </div>
           </Col>
         </Row>

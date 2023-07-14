@@ -1,9 +1,11 @@
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { BiLogoLinkedin, BiSolidFlame } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
+  const { t } = useTranslation();
   return (
     <Container fluid className="fs-small bg-light sticky-top">
       <Row className="px-4 py-3">
@@ -30,19 +32,19 @@ const NavbarComponent = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Link className="nav-link me-2" to="/features">
-                Features
+                {t("navbar.features")}
               </Link>
               <Link className="nav-link me-2" to="/pricing">
-                Pricing
+                {t("navbar.pricing")}
               </Link>
               <Link className="nav-link me-2" to="/">
-                Carbon test
+                {t("navbar.carbonTest")}
               </Link>
               <Link className="nav-link me-2" to="/contactUs">
-                Contact us
+                {t("navbar.contactUs")}
               </Link>
               <Link className="nav-link me-2" to="/aboutUs">
-                About us
+                {t("navbar.aboutUs")}
               </Link>
             </Nav>
           </Navbar.Collapse>

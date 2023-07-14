@@ -1,0 +1,175 @@
+{
+  "homePage": {
+    "test": {
+      "title": "L'impatto del tuo sito?",
+      "firstP": "Internet consuma molta elettricità. 416,2 TWh all'anno per essere precisi, è più dell'intero Regno Unito.",
+      "secondP": "Esegui una rapida scansione del tuo sito web per comprenderne l'impatto attuale."
+    },
+    "testError": {
+      "title": "Ops...",
+      "firstP": "Sembra che non siamo riusciti a calcolare con successo l'impatto di anidride carbonica per",
+      "secondP": "Ricontrolla l'url della pagina o scrivine uno nuovo."
+    },
+    "form": {
+      "label": "Il tuo sito",
+      "placeholder": "Scrivi l'url del tuo sito",
+      "button": "Calcola"
+    },
+    "testSuccessfull": {
+      "title": "L'impatto di anidride carbonica del tuo sito ",
+      "link": "Calcola un altro sito"
+    },
+    "resultComponent": {
+      "rating": "rating",
+      "title": "Valutazione Efficienza",
+      "subtitle1": "è più pulito del ",
+      "subtitle2": "% delle pagine web",
+      "cards": {
+        "first": {
+          "title": "Sito green?",
+          "true": "SI",
+          "trueDescription": "Il server di questo sito funziona con energia pulita",
+          "false": "NO",
+          "falseDescription": "Il server di questo sito funziona con energia non pulita"
+        },
+        "second": {
+          "title": "Bytes",
+          "unit": "/pagina",
+          "description": "La quantità di byte inviati da questo sito web"
+        },
+        "third": {
+          "title": "prodotta",
+          "unit": "/caricamento pagina",
+          "description": "La quantità approssimativa di CO2 trasferita su ogni caricamento di pagina espressa in grammi"
+        },
+        "fourth": {
+          "title": "Energia in kw",
+          "unit": "/caricamento pagina",
+          "description": "La quantità approssimativa di energia trasferita a ogni caricamento della pagina"
+        }
+      }
+    },
+    "previousResult": {
+      "title": "Impatto CO2 per",
+      "expand": "Espandi",
+      "collapse": "Chiudi"
+    }
+  },
+
+  "featuresPage": {
+    "title": "Funizionalità Limit",
+    "firstP": "Cosa puoi calcolare",
+    "cards": {
+      "first": {
+        "title": "prodotta",
+        "description": "La quantità approssimativa di CO2 trasferita su ogni pagina caricata espressa in grammi"
+      },
+      "second": {
+        "title": "Bytes per pagina",
+        "description": "La quantità di byte inviati da questo sito web"
+      },
+      "third": {
+        "title": "Sito green?",
+        "description": "Capire se il sito utilizza interamente energia rinnovabile o funziona anche con l'energia standard"
+      },
+      "fourth": {
+        "title": "% Efficienza",
+        "description": "Visualizza la valutazione dell'efficienza del tuo sito web, impara come si distingue rispetto al resto dei siti testati."
+      }
+    }
+  },
+
+  "pricingPage": {
+    "title": "Scopri i nostri prezzi",
+    "firstP": "Come rendere il tuo sito web neutrale dal punto di vista climatico? Lascia che ti aiutiamo",
+    "cards": {
+      "first": {
+        "title": "FREE",
+        "description": "Per chi vuole provare il nostro software senza impegno",
+        "unit": "/anno",
+        "button": "Compra",
+        "options": {
+          "first": "Analisi avanzate e branding personalizzato.",
+          "second": "Accesso a contenuti o risorse esclusivi",
+          "third": "Aumento dei limiti di archiviazione o utilizzo",
+          "fourth": "Assistenza clienti prioritaria",
+          "fifth": "Opzioni di personalizzazione",
+          "sixth": "Nessuna pubblicità"
+        }
+      },
+      "second": {
+        "title": "BUSINESS",
+        "description": "Per chi vuole provare il nostro software senza impegno",
+        "unit": "/year",
+        "button": "Buy",
+        "options": {
+          "first": "Analisi avanzate e branding personalizzato.",
+          "second": "Accesso a contenuti o risorse esclusivi",
+          "third": "Aumento dei limiti di archiviazione o utilizzo",
+          "fourth": "Priority customer support",
+          "fifth": "Opzioni di personalizzazione",
+          "sixth": "Nessuna pubblicità"
+        }
+      }
+    }
+  },
+
+  "contactPage": {
+    "title": "Contattaci",
+    "firstP": "Siamo qui per aiutarti, se vuoi scrivici qualche riga",
+    "form": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Scrivi il tuo nome"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Scrivi la tua email"
+      },
+      "message": {
+        "label": "Messggio",
+        "placeholder": "Scrivi il tuo messaggio qua..."
+      },
+      "button": "Invia"
+    }
+  },
+
+  "aboutPage": {
+    "title": "Limit team",
+    "firstP": "Ci dedichiamo a fare la differenza.",
+    "secondP": "Puoi vedere in un istante quali pagine consumano più energia e quanta CO2 hai emesso e compensato questo mese. Ricevi suggerimenti su come ridurre l'impronta di anidride carbonica delle pagine dei tuoi siti web."
+  },
+
+  "notFoundPage": {
+    "title": "404 - Pagina non trovata",
+    "firstP": "Questa pagina non esiste"
+  },
+
+  "privacyPolicy": {
+    "title": "Politica sulla Privacy"
+  },
+
+  "navbar": {
+    "features": "Funzionalità",
+    "pricing": "Prezzi",
+    "carbonTest": "Carbon test",
+    "contactUs": "Contattaci",
+    "aboutUs": "Su di noi"
+  },
+
+  "footer": {
+    "firstP": "Stiamo cercando di aumentare la consapevolezza sull'impatto che i siti web hanno sul nostro pianeta. Limita le emissioni del tuo sito web seguendo alcuni consigli.",
+    "secondP": "Sii il primo a conoscere le novità e le nostre prossime funzionalità per salvare il nostro pianeta.",
+    "form": {
+      "label": "La tua email",
+      "placeholder": "Scrivi la tua email",
+      "button": "Iscriviti"
+    },
+    "links": {
+      "aboutUs": "About us",
+      "contact": "Contatti",
+      "privacy": "Privacy policy"
+    },
+    "copyright": "Tutti i diriitti riservati."
+  }
+}

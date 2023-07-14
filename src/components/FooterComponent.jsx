@@ -3,7 +3,9 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsLinkedin, BsMessenger, BsWhatsapp } from "react-icons/bs";
 import { BiSolidFlame } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 const FooterComponent = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const handleForm = (e) => {
     e.preventDefault();
@@ -23,29 +25,26 @@ const FooterComponent = () => {
               <BiSolidFlame className="fs-1" />
               <h4>LIMIT</h4>
             </span>
-            <p className="pe-5">
-              We are trying to raise awarness on the impact website have on our planet. Limit your website emission by
-              following few recommendations.
-            </p>
+            <p className="pe-5">{t("footer.firstP")}</p>
           </Col>
           <Col md={4} xs={12}>
             <h4 className="fw-bold">Newsletter</h4>
-            <p>Be the first one to know about news and our next features to keep our planet saver.</p>
+            <p>{t("footer.secondP")}</p>
             <Form onSubmit={handleForm}>
               <Form.Group className="mb-3" controlId="footerForm">
                 <Form.Label>
-                  <small>Your email</small>
+                  <small>{t("footer.form.label")}</small>
                 </Form.Label>
                 <span className="d-flex">
                   <Form.Control
                     required
                     type="email"
-                    placeholder="Write your email"
+                    placeholder={t("footer.form.placeholder")}
                     onChange={handleEmail}
                     className="w-75 bg-transparent text-light"
                   />
                   <Button type="submit" className="btn-light green text-light ms-3">
-                    Sign Up
+                    {t("footer.form.button")}
                   </Button>
                 </span>
               </Form.Group>
@@ -88,18 +87,18 @@ const FooterComponent = () => {
         <Row>
           <Col xs={12} lg={6}>
             <Link to={"aboutUs"} className="text-decoration-none text-light me-4">
-              About us
+              {t("footer.links.aboutUs")}
             </Link>
             <Link to={"contactUs"} className="text-decoration-none text-light me-4">
-              Contact
+              {t("footer.links.contact")}
             </Link>
             <Link to={"privacyPolicy"} className="text-decoration-none text-light me-4">
-              Privacy policy
+              {t("footer.links.privacy")}
             </Link>
           </Col>
           <Col xs={12} lg={6} className="text-end">
             {" "}
-            &copy; 2000 - {new Date().getFullYear()}, All Right Reserved
+            &copy; 2000 - {new Date().getFullYear()}, {t("footer.copyright")}
           </Col>
         </Row>
       </Container>

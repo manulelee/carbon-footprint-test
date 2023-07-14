@@ -2,8 +2,10 @@ import { useState } from "react";
 import { Button, Col, Container, Form, Row, Spinner } from "react-bootstrap";
 import TestResultComponent from "./TestResultcomponent";
 import PreviousResultComponent from "./PreviousResultComponent";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+  const { t } = useTranslation();
   const [url, setUrl] = useState("");
   const [wrongUrl, setWrongUrl] = useState("");
   const [result, setResult] = useState("");
@@ -51,50 +53,48 @@ const HomePage = () => {
         <Col xs={12} md={8} xl={6}>
           {!isError && !result && (
             <>
-              <h1 className="fw-bold">Your website footprint?</h1>
-              <p className="blueGreen-text text">
-                The internet consumes a lot of electricity. 416.2TWh per year to be precise, that's more than the entire
-                United Kingdom.
-              </p>
-              <p className="blueGreen-text text">Do a quick scan of your website to understand its courrent impact.</p>
+              <h1 className="fw-bold">{t("homePage.test.title")}</h1>
+              <p className="blueGreen-text text">{t("homePage.test.firstP")}</p>
+              <p className="blueGreen-text text">{t("homePage.test.secondP")}</p>
             </>
           )}
 
           {isError && (
             <>
-              <h1 className="fw-bold">Ops...</h1>
+              <h1 className="fw-bold">{t("homePage.testError.title")}</h1>
               <p className="green-text text">
-                It looks like we could not successfully calculate the carbon impact for
+                {t("homePage.testError.firstP")}
                 <span className="fw-bold"> {wrongUrl}</span>.
               </p>
-              <p className="green-text text">Please double check the page url or write a new one.</p>
+              <p className="green-text text">{t("homePage.testError.secondP")}</p>
             </>
           )}
+
           {!result && (
             <Form onSubmit={handleForm}>
               <Form.Group className="mb-3 w-75" controlId="websiteForm">
                 <Form.Label className="blueGreen-text mt-1 fw-bold">
-                  <small>Your website</small>
+                  <small>{t("homePage.form.label")}</small>
                 </Form.Label>
                 <span className="d-flex">
                   <Form.Control
                     required
                     type="text"
-                    placeholder="Write website url"
+                    placeholder={t("homePage.form.placeholder")}
                     onChange={handleUrl}
                     className="blueGreen-border"
                   />
                   <Button type="submit" className="btn-dark blueGreen blueGreen-border text-light ms-3">
-                    Calculate
+                    {t("homePage.form.button")}
                   </Button>
                 </span>
               </Form.Group>
+              {isLoading && (
+                <div className="text-center green-text w-75">
+                  <Spinner animation="border" role="status" />
+                </div>
+              )}
             </Form>
-          )}
-          {isLoading && (
-            <div className="text-center green-text">
-              <Spinner animation="border" role="status" />
-            </div>
           )}
         </Col>
       </Row>
@@ -102,7 +102,7 @@ const HomePage = () => {
         {result && (
           <>
             <h3 className="fw-bold green-text">
-              Your website footprint{" "}
+              {t("homePage.testSuccessfull.title")}
               <span className="blueGreen-text fs-4">{result.url.slice(8, result.url.length - 1)}</span>
             </h3>
             <div className="bg-light p-4 rounded-5 mt-3">
@@ -119,7 +119,7 @@ const HomePage = () => {
                       console.log(previousResult);
                     }}
                   >
-                    Calculate other site
+                    {t("homePage.testSuccessfull.link")}
                   </p>
                 </Col>
               </Row>
