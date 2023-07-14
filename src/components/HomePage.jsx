@@ -11,7 +11,9 @@ const HomePage = () => {
   const [result, setResult] = useState("");
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [previousResult, setPreviousResult] = useState([]);
+  const [previousResult, setPreviousResult] = useState(
+    localStorage.getItem("previousResult") ? JSON.parse(localStorage.getItem("previousResult")) : []
+  );
 
   const getWebsiteFootprint = async () => {
     setIsError(false);
@@ -51,6 +53,8 @@ const HomePage = () => {
     <Container className="page-container">
       <Row className="ms-3">
         <Col xs={12} md={8} xl={6}>
+          {/* Testo iniziale */}
+
           {!isError && !result && (
             <>
               <h1 className="fw-bold">{t("homePage.test.title")}</h1>
@@ -58,6 +62,8 @@ const HomePage = () => {
               <p className="blueGreen-text text">{t("homePage.test.secondP")}</p>
             </>
           )}
+
+          {/* Test esito negativo */}
 
           {isError && (
             <>
@@ -69,6 +75,8 @@ const HomePage = () => {
               <p className="green-text text">{t("homePage.testError.secondP")}</p>
             </>
           )}
+
+          {/* Form test */}
 
           {!result && (
             <Form onSubmit={handleForm}>
@@ -99,6 +107,8 @@ const HomePage = () => {
         </Col>
       </Row>
       <Row className="ms-3 ">
+        {/* Test esito positivo */}
+
         {result && (
           <>
             <h3 className="fw-bold green-text">
@@ -115,8 +125,9 @@ const HomePage = () => {
                       previousResult.unshift(result);
                       setResult("");
                       setUrl("");
-                      console.log("Risultati precedenti:");
-                      console.log(previousResult);
+                      localStorage.setItem("previousResult", JSON.stringify(previousResult));
+                      // console.log("Risultati precedenti:");
+                      // console.log(previousResult);
                     }}
                   >
                     {t("homePage.testSuccessfull.link")}
@@ -127,6 +138,9 @@ const HomePage = () => {
           </>
         )}
       </Row>
+
+      {/* Risultati test precedenti */}
+
       <Row className="ms-3 mt-5">
         {previousResult.map((previous, index) => (
           <PreviousResultComponent previous={previous} key={index}></PreviousResultComponent>

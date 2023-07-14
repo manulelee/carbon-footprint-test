@@ -48,6 +48,10 @@ footer {
   margin-top: 113px;
 }
 
+footer ::placeholder {
+  color: white !important;
+}
+
 .blueGreen-text {
   color: #2c8680 !important;
 }

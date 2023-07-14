@@ -6,6 +6,8 @@ const TestResultComponent = ({ result }) => {
   const { t } = useTranslation();
   return (
     <>
+      {/* Componente esito test positivo */}
+
       <div className="lightGray p-4 rounded-5 ">
         <Row className="align-items-center">
           <Col xs={12} md={6} lg={2}>
@@ -14,9 +16,7 @@ const TestResultComponent = ({ result }) => {
                 value={result.cleanerThan * 100}
                 strokeWidth={10}
                 styles={buildStyles({
-                  // How long animation takes to go from one percentage to another, in seconds
-                  pathTransitionDuration: 0.5,
-                  // Colors
+                  // Colori progress bar
                   pathColor: `#255350`,
                   trailColor: "#2c8680",
                 })}

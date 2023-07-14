@@ -39,12 +39,12 @@
         },
         "third": {
           "title": "prodotta",
-          "unit": "/caricamento pagina",
+          "unit": "/pagina",
           "description": "La quantità approssimativa di CO2 trasferita su ogni caricamento di pagina espressa in grammi"
         },
         "fourth": {
           "title": "Energia in kw",
-          "unit": "/caricamento pagina",
+          "unit": "/pagina",
           "description": "La quantità approssimativa di energia trasferita a ogni caricamento della pagina"
         }
       }
@@ -101,7 +101,7 @@
         "title": "BUSINESS",
         "description": "Per chi vuole provare il nostro software senza impegno",
         "unit": "/year",
-        "button": "Buy",
+        "button": "Compra",
         "options": {
           "first": "Analisi avanzate e branding personalizzato.",
           "second": "Accesso a contenuti o risorse esclusivi",
@@ -154,7 +154,7 @@
     "pricing": "Prezzi",
     "carbonTest": "Carbon test",
     "contactUs": "Contattaci",
-    "aboutUs": "Su di noi"
+    "aboutUs": "Chi siamo"
   },
 
   "footer": {

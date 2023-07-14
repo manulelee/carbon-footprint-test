@@ -6,6 +6,8 @@ const PreviousResultComponent = ({ previous }) => {
   const { t } = useTranslation();
   const [collapse, setCollapse] = useState(true);
   return (
+    /* Componente test precedenti */
+
     <div className="bg-light p-4 rounded-5 mt-3">
       <span className={`d-flex justify-content-between align-items-end ${!collapse && "mb-3"}`}>
         <p className={`green-text m-0`}>
