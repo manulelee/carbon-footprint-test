@@ -12,7 +12,7 @@ const HomePage = () => {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [previousResult, setPreviousResult] = useState(
-    localStorage.getItem("previousResult") ? JSON.parse(localStorage.getItem("previousResult")) : []
+    sessionStorage.getItem("previousResult") ? JSON.parse(sessionStorage.getItem("previousResult")) : []
   );
 
   const getWebsiteFootprint = async () => {
@@ -125,7 +125,7 @@ const HomePage = () => {
                       previousResult.unshift(result);
                       setResult("");
                       setUrl("");
-                      localStorage.setItem("previousResult", JSON.stringify(previousResult));
+                      sessionStorage.setItem("previousResult", JSON.stringify(previousResult));
                       // console.log("Risultati precedenti:");
                       // console.log(previousResult);
                     }}

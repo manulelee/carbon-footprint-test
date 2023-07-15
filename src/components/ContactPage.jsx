@@ -14,6 +14,7 @@ const ContactPage = () => {
       email: email,
       message: message,
     };
+    console.log("Form data:");
     console.log(data);
   };
   const handleName = (e) => {
@@ -34,31 +35,36 @@ const ContactPage = () => {
           <p className="blueGreen-text text">{t("contactPage.firstP")}</p>
 
           <Form onSubmit={handleForm}>
-            <Form.Group className="mb-3 w-75" controlId="contactForm">
-              <Form.Label className="blueGreen-text mt-1 fw-bold">
+            <Form.Group className="mb-3 w-75">
+              <Form.Label className="blueGreen-text mt-1 fw-bold" for="name">
                 <small>{t("contactPage.form.name.label")}</small>
               </Form.Label>
               <Form.Control
+                id="name"
                 className="blueGreen-border w-75"
                 required
                 type="text"
                 placeholder={t("contactPage.form.name.placeholder")}
                 onChange={handleName}
+                autoComplete="on"
               />
-              <Form.Label className="blueGreen-text mt-1 fw-bold">
+              <Form.Label className="blueGreen-text mt-1 fw-bold" for="email">
                 <small>{t("contactPage.form.email.label")}</small>
               </Form.Label>
               <Form.Control
+                id="email"
                 className="blueGreen-border w-75"
                 required
                 type="email"
                 placeholder={t("contactPage.form.email.placeholder")}
                 onChange={handleEmail}
+                autoComplete="on"
               />
-              <Form.Label className="blueGreen-text mt-1 fw-bold">
+              <Form.Label className="blueGreen-text mt-1 fw-bold" for="message">
                 <small>{t("contactPage.form.message.label")}</small>
               </Form.Label>
               <Form.Control
+                id="message"
                 className="blueGreen-border w-75"
                 required
                 as="textarea"
