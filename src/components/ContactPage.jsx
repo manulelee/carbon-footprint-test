@@ -28,7 +28,7 @@ const ContactPage = () => {
   };
 
   return (
-    <Container className="page-container">
+    <Container className="page-container" data-testid="contactPage">
       <Row className="ms-3">
         <Col xs={12} md={8} lg={6}>
           <h1 className="fw-bold">{t("contactPage.title")}</h1>
@@ -36,7 +36,7 @@ const ContactPage = () => {
 
           <Form onSubmit={handleForm}>
             <Form.Group className="mb-3 w-75">
-              <Form.Label className="blueGreen-text mt-1 fw-bold" for="name">
+              <Form.Label className="blueGreen-text mt-1 fw-bold" htmlFor="name">
                 <small>{t("contactPage.form.name.label")}</small>
               </Form.Label>
               <Form.Control
@@ -48,7 +48,7 @@ const ContactPage = () => {
                 onChange={handleName}
                 autoComplete="on"
               />
-              <Form.Label className="blueGreen-text mt-1 fw-bold" for="email">
+              <Form.Label className="blueGreen-text mt-1 fw-bold" htmlFor="email">
                 <small>{t("contactPage.form.email.label")}</small>
               </Form.Label>
               <Form.Control
@@ -60,7 +60,7 @@ const ContactPage = () => {
                 onChange={handleEmail}
                 autoComplete="on"
               />
-              <Form.Label className="blueGreen-text mt-1 fw-bold" for="message">
+              <Form.Label className="blueGreen-text mt-1 fw-bold" htmlFor="message">
                 <small>{t("contactPage.form.message.label")}</small>
               </Form.Label>
               <Form.Control

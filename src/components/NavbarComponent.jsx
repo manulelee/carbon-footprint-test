@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavbarComponent = () => {
   const { t } = useTranslation();
   return (
-    <Container fluid className="fs-small bg-light sticky-top">
+    <Container fluid className="fs-small bg-light sticky-top" data-testid="navbar">
       <Row className="px-4 py-3">
         <Col>
           <Link to={"https://wa.me/+39XXXXXXXXX"} target="_blank" className="text-decoration-none ">

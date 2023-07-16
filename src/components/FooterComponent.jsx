@@ -17,7 +17,7 @@ const FooterComponent = () => {
     setEmail(e.target.value);
   };
   return (
-    <footer>
+    <footer data-testid="footer">
       <Container fluid className="py-5 px-5 fs-small ">
         <Row className="pb-5 justify-content-between">
           <Col md={6} xs={12} className="text-light ">

@@ -5,7 +5,7 @@ import { BsCheck2Circle } from "react-icons/bs";
 const PricingPage = () => {
   const { t } = useTranslation();
   return (
-    <Container className="page-container">
+    <Container className="page-container" data-testid="pricingPage">
       <span className="ms-3">
         <h1 className="fw-bold">{t("pricingPage.title")}</h1>
         <p className="blueGreen-text text">{t("pricingPage.firstP")}</p>

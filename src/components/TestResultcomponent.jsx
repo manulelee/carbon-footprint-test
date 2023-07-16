@@ -8,7 +8,7 @@ const TestResultComponent = ({ result }) => {
     <>
       {/* Componente esito test positivo */}
 
-      <div className="lightGray p-4 rounded-5 ">
+      <div className="lightGray p-4 rounded-5" data-testid="result">
         <Row className="align-items-center">
           <Col xs={12} md={6} lg={2}>
             <div className="w-90">

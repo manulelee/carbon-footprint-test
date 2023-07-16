@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const FeaturePage = () => {
   const { t } = useTranslation();
   return (
-    <Container className="page-container">
+    <Container className="page-container" data-testid="featuresPage">
       <span className="ms-3">
         <h1 className="fw-bold">{t("featuresPage.title")}</h1>
         <p className="blueGreen-text text">{t("featuresPage.firstP")}</p>

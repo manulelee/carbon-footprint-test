@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const PrivacyPolicyPage = () => {
   const { t } = useTranslation();
   return (
-    <Container className="page-container ms-5 ps-5">
+    <Container className="page-container ms-5 ps-5" data-testid="privacyPolicyPage">
       <Row className="ms-3">
         <Col xs={12} md={8} lg={6}>
           <h1 className="fw-bold">{t("privacyPolicy.title")}</h1>

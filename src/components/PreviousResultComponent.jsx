@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import TestResultComponent from "./TestResultcomponent";
+import TestResultComponent from "./TestResultComponent";
 import { useState } from "react";
 
 const PreviousResultComponent = ({ previous }) => {
@@ -8,7 +8,7 @@ const PreviousResultComponent = ({ previous }) => {
   return (
     /* Componente test precedenti */
 
-    <div className="bg-light p-4 rounded-5 mt-3">
+    <div className="bg-light p-4 rounded-5 mt-3" data-testid="previousResult">
       <span className={`d-flex justify-content-between align-items-end ${!collapse && "mb-3"}`}>
         <p className={`green-text m-0`}>
           <span className={`${collapse && `fw-bold text-uppercase`}`}>{t("homePage.previousResult.title")}</span>
@@ -17,6 +17,7 @@ const PreviousResultComponent = ({ previous }) => {
           </span>
         </p>
         <span
+          role="button"
           className="blueGreen-text m-0"
           onClick={() => {
             setCollapse(!collapse);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, Col, Container, Form, Row, Spinner } from "react-bootstrap";
-import TestResultComponent from "./TestResultcomponent";
+import TestResultComponent from "./TestResultComponent";
 import PreviousResultComponent from "./PreviousResultComponent";
 import { useTranslation } from "react-i18next";
 
@@ -50,7 +50,7 @@ const HomePage = () => {
   };
 
   return (
-    <Container className="page-container">
+    <Container className="page-container" data-testid="homePage">
       <Row className="ms-3">
         <Col xs={12} md={8} xl={6}>
           {/* Testo iniziale */}
@@ -121,6 +121,7 @@ const HomePage = () => {
                 <Col className="d-flex justify-content-end pt-4">
                   <p
                     className="blueGreen-text"
+                    role="button"
                     onClick={() => {
                       previousResult.unshift(result);
                       setResult("");
