@@ -53,16 +53,23 @@ const FooterComponent = () => {
               <Link
                 to={"https://www.linkedin.com/LimitFootprintCalculator"}
                 target="_blank"
+                aria-label="Link to linkedin page"
                 className="text-decoration-none text-light"
               >
                 <BsLinkedin className="me-2" />
               </Link>
-              <Link to={"https://wa.me/+39XXXXXXXXX"} target="_blank" className="text-decoration-none text-light">
+              <Link
+                to={"https://wa.me/+39XXXXXXXXX"}
+                target="_blank"
+                aria-label="Link to whatsapp page"
+                className="text-decoration-none text-light"
+              >
                 <BsWhatsapp className="me-2" />
               </Link>
               <Link
                 to={"https://www.instagram.com/LimitFootprintCalculator"}
                 target="_blank"
+                aria-label="Link to Instagram page"
                 className="text-decoration-none text-light"
               >
                 <BsInstagram className="me-2" />
@@ -70,6 +77,7 @@ const FooterComponent = () => {
               <Link
                 to={"https://www.messenger.com/LimitFootprintCalculator"}
                 target="_blank"
+                aria-label="Link to messenger page"
                 className="text-decoration-none text-light"
               >
                 <BsMessenger className="me-2" />
@@ -77,6 +85,7 @@ const FooterComponent = () => {
               <Link
                 to={"https://www.facebook.com/LimitFootprintCalculator"}
                 target="_blank"
+                aria-label="Link to facebook page"
                 className="text-decoration-none text-light"
               >
                 <BsFacebook className="me-2" />

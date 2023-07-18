@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import TestResultComponent from "./TestResultComponent";
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 
 const PreviousResultComponent = ({ previous }) => {
   const { t } = useTranslation();
@@ -16,15 +17,15 @@ const PreviousResultComponent = ({ previous }) => {
             {" " + previous.url.slice(8, previous.url.length - 1)}
           </span>
         </p>
-        <span
+        <Button
           role="button"
-          className="blueGreen-text m-0"
+          className="bg-transparent border-0 blueGreen-text m-0"
           onClick={() => {
             setCollapse(!collapse);
           }}
         >
           {collapse ? t("homePage.previousResult.expand") : t("homePage.previousResult.collapse")}
-        </span>
+        </Button>
       </span>
       <span className={collapse ? "d-none" : ""}>
         <TestResultComponent result={previous}></TestResultComponent>

@@ -6,16 +6,23 @@ import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   const { t } = useTranslation();
+
   return (
     <Container fluid className="fs-small bg-light sticky-top" data-testid="navbar">
       <Row className="px-4 py-3">
         <Col>
-          <Link to={"https://wa.me/+39XXXXXXXXX"} target="_blank" className="text-decoration-none ">
+          <Link
+            to={"https://wa.me/+39XXXXXXXXX"}
+            target="_blank"
+            aria-label="Link to whatsapp page"
+            className="text-decoration-none "
+          >
             <BsWhatsapp className="me-4 green-text" />
           </Link>
           <Link
             to={"https://www.linkedin.com/LimitFootprintCalculator"}
             target="_blank"
+            aria-label="Link to Linkedin page"
             className="text-decoration-none green-text"
           >
             <BiLogoLinkedin className="me-4" />

@@ -119,8 +119,8 @@ const HomePage = () => {
               <TestResultComponent result={result}></TestResultComponent>
               <Row>
                 <Col className="d-flex justify-content-end pt-4">
-                  <p
-                    className="blueGreen-text"
+                  <Button
+                    className="bg-transparent border-0 blueGreen-text"
                     role="button"
                     onClick={() => {
                       previousResult.unshift(result);
@@ -132,7 +132,7 @@ const HomePage = () => {
                     }}
                   >
                     {t("homePage.testSuccessfull.link")}
-                  </p>
+                  </Button>
                 </Col>
               </Row>
             </div>
