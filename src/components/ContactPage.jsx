@@ -40,6 +40,7 @@ const ContactPage = () => {
                 <small>{t("contactPage.form.name.label")}</small>
               </Form.Label>
               <Form.Control
+                data-testid="name"
                 id="name"
                 className="blueGreen-border w-75"
                 required
@@ -52,6 +53,7 @@ const ContactPage = () => {
                 <small>{t("contactPage.form.email.label")}</small>
               </Form.Label>
               <Form.Control
+                data-testid="email"
                 id="email"
                 className="blueGreen-border w-75"
                 required
@@ -64,6 +66,7 @@ const ContactPage = () => {
                 <small>{t("contactPage.form.message.label")}</small>
               </Form.Label>
               <Form.Control
+                data-testid="message"
                 id="message"
                 className="blueGreen-border w-75"
                 required

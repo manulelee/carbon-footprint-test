@@ -87,6 +87,7 @@ const HomePage = () => {
                 <span className="d-flex">
                   <Form.Control
                     required
+                    data-testid="url"
                     type="text"
                     placeholder={t("homePage.form.placeholder")}
                     onChange={handleUrl}

@@ -38,6 +38,7 @@ const FooterComponent = () => {
                 <span className="d-flex">
                   <Form.Control
                     required
+                    data-testid="email"
                     type="email"
                     placeholder={t("footer.form.placeholder")}
                     onChange={handleEmail}

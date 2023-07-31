@@ -34,7 +34,7 @@ footer ::-webkit-input-placeholder {
 }
 .features-card {
   background-color: #eaf9f8;
-  height: 200px;
+  min-height: 220px;
 }
 footer .btn {
   background-color: #a5e2de;
