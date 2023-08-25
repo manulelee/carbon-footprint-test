@@ -10,6 +10,8 @@ I made it with i18n. The LanguageDetector will detect the language of the browse
 
 ## ✅ Pay attention to components. Extra point will be granted if component will be properly documented
 
+I attempted to use Storybook to test components in isolation. Run `npm run storybook`
+
 ## ✅ The whole service should be accessible
 
 ## ✅ The service should be testable and tested
