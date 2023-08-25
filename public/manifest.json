@@ -1,0 +1,8 @@
+{
+  "short_name": "Limit App",
+  "name": "Limit - Carbon footprint calculator",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#f5f3f1 "
+}
