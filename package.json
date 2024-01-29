@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "vercel dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -68,6 +68,7 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.1.1",
     "storybook-react-i18next": "^2.0.8",
+    "vercel": "^33.3.0",
     "webpack": "^5.88.2"
   }
 }
